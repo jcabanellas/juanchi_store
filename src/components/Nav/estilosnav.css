@@ -1,0 +1,16 @@
+.back{
+    background-color:blue;
+    display:flex;
+    margin:10px;
+    list-style:none;
+    padding:30px;
+    color:white;
+};
+
+li{
+    padding-left:20px;
+    padding-right:20px;
+}
+
+
+
