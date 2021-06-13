@@ -9,10 +9,10 @@ export const Navbar =() => {
                 <button className="navbar-toggler col-md-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
-                <div className="collapse navbar-collapse container-fluid" id="navbarNav">
-                    <ul className="navbar-nav back row">
+                <div className="collapse navbar-collapse" id="navbarNav">
+                    <ul className="navbar-nav navuno">
                         <li className="nav-item col-md-3">
-                            <a className="nav-link active categorias" href="aa" aria-current="page">Nosotros</a>
+                            <a className="nav-link categorias" href="aa" aria-current="page">Nosotros</a>
                         </li>
                         <li className="nav-item col-md-3">
                             <a className="nav-link categorias" href="aa"  >Productos</a>

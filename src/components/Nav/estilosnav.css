@@ -1,17 +1,15 @@
-.back{
-    background-color:none;
-    text-decoration: none;
-    list-style:none;
-    color:white;
-    display: flex;
-    margin: 20px;
+.navuno{
+    justify-content: center;
+    color: white;
 }
 
 .categorias{
     padding: 20px;
-    margin:20px;
+    margin-left:20px;
+    margin-right: 20px;
     list-style: none;
-    color: white;
+    
+
 }
 
 
