@@ -7,25 +7,20 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-      <nav>
-        <img src="\images\logo.jpg" className="App-logo" alt="logo" />
-        <div><Navbar/></div>
-      </nav>
-        <p>
-          holas
-        </p>
-        <h1>{Nameapp}</h1>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <div className="container-fluid">
+          <div className="row">
+            <img src="\images\logo.jpg" className="App-logo col col-md-3" alt="logo" />
+            <h1 className="col col-md-3">{Nameapp}</h1>
+            <Navbar className="col col-md-3"></Navbar>
+          </div>
+        </div>
+       
+        
+        
+        
       </header>
       
-      <div><Navbar/></div>
+      
       
 
     </div>
