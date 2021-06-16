@@ -1,6 +1,6 @@
 import './estilosnav.css';
 import React from 'react';
-
+import { CartWidget } from '../CartWidget/CartWidget';
 export const Navbar =() => {
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -23,13 +23,14 @@ export const Navbar =() => {
                             </li>
                         
                         </ul>
-                    
+                    <CartWidget></CartWidget>
                     </div>
                 </div>
             </div>
         </nav>
     )
 };
+
 
 
 
