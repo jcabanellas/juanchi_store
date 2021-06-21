@@ -4,6 +4,7 @@ import { Navbar } from '../components/Nav/Navbar.js';
 import { ItemList} from '../components/ItemList/ItemList.js';
 
 
+
 export const HomeContainer = () => {
     
     return (
@@ -15,8 +16,10 @@ export const HomeContainer = () => {
                         <div className="row">
                 
                 
-                            <div className="col col-md-12"><Navbar ></Navbar></div>
-                            <ItemList entrega={"entrega 24 hs"}></ItemList>
+                            <div className="col col-md-12"><Navbar></Navbar></div>
+                            <div className="container">
+                            <ItemList></ItemList>
+                            </div>
 
                 
                         </div>
