@@ -93,4 +93,69 @@ function FnApp () {
 
 }
 
+/*Clase 6 Promises y maps */
+// Una PROMISE permite seguir el ciclo de vida de fuciones.  Estados posibles  PENDING =>(FULFILLED REJECTED)
+
+function Apdp (){
+    function getData (){
+        let value = new Promise ((resolve, reject) =>{
+
+        })
+    
+
+    setTimeout(() => {
+        let aux=20;
+        if (aux>20){
+            resolve(aux)
+        } else{
+            reject('error upps')
+        }
+        
+    },3000)
+    return value
+}
+
+(getData().then(result =>{
+    console.log(result)
+    }).catch(error =>{
+        console.log(error)
+    })
+    )
+    }
+
+// Traer Api
+
+
+async function getData (){ //async es decirle al codigo qe la función será asincrónica
+    const response = await fetch("https://api.mercadolibre.com//sites/MLA/search?q=zapatillas");
+    const data = await response.json();
+    console.log(data);
+        }
+
+// COMPLETAR CLASE MINUTO 50
+
+//MAPS - el metodo map nos permite generar un array tomando de base otro array
+
+//3 casos que hacen lo mismo
+
+function Appa(){
+    let [productos, setProductos] = useState([]);
+    
+    useEffect(() => {
+    const WaitforData = async() =>{
+        let data = await getData ('zapatillas'); //lamada a la Api
+        setProductos(data);
+
+    }
+    WaitforData();
+
+
+    }, [])
+
+    if(productos.length> 0){
+        let aux =productos.map(element => element)
+        console.log (aux);
+    }
+    return (<div>{productos.length ==0 ? SI : NO}</div>);
+}
 

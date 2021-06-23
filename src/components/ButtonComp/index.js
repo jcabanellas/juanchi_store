@@ -2,13 +2,9 @@ import React from 'react';
 import './estilosbutton.css';
 
 
-export const Buttongeneral = ({text,counter}) => {
-    
 
-    const onAdd =() =>{
-        console.log(`Agregamos ${counter} unidades al carrito`)
+export const Buttongeneral = ({text,onAdd}) => {
 
-    }
     
     return (
         <button onClick={onAdd}>
