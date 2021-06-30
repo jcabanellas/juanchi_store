@@ -1,9 +1,8 @@
 
 import './App.css';
 
-import { HomeContainer } from './containers/Home';
+import { HomeContainer } from './containers/Home/Home';
 
-import Itemmeli from './components/Api/itemmeli';
 
 
 
@@ -14,7 +13,7 @@ function App() {
   return (
     <div>
     <HomeContainer></HomeContainer>
-    <Itemmeli></Itemmeli>
+    
     </div>
   );
 }

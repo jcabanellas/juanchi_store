@@ -1,5 +1,5 @@
 import React from 'react'
-import CardComponent from './../CardComponents/index';
+import CardComponent from '../CardComponents/card';
 import {getData} from '../../utils/constantes';
 import { useState, useEffect } from 'react';
 
@@ -13,6 +13,7 @@ function Itemmeli() {
                     title:element.title,
                     img: element.thumbnail,
                     price: element.price,
+                    stock:100,
                 }
             })
             setProductos(aux);
@@ -27,11 +28,11 @@ function Itemmeli() {
         <div>
             <div className="container">
                 <div className="row">
-                {productos.lenght ===0 ? 'Si cargo' : 'no' }
+                {productos.lenght ===0 ? 'Si cargo' : '' }
                 {productos.map((element,index) => {
                     return (
-                        <span key={index}>
-                        <CardComponent title={element.title} price={element.price} img={element.img}></CardComponent>
+                        <span key={index} className="col col-md-3">
+                        <CardComponent title={element.title} price={element.price} img={element.img} stock={element.stock}></CardComponent>
                         </span>
                     )
                     })}

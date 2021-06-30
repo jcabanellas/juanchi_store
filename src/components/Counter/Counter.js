@@ -1,6 +1,5 @@
 import React,{useState} from 'react'
 import './estiloCounter.css'
-
 import { Buttongeneral} from './../ButtonComp/index';
 
 const Counter = ({stock}) => {
@@ -31,7 +30,7 @@ const Counter = ({stock}) => {
             <p counter={counter}>{counter}</p>
             <button onClick={sumar}>+</button>
             {stock >0 ?
-            <Buttongeneral text={"Agregar"} onAdd={onAdd}></Buttongeneral>
+            <Buttongeneral text={"Agregar al carrito"} onAdd={onAdd}></Buttongeneral>
             
             :
             <p>No hay disponibilidad</p> 

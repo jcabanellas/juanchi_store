@@ -1,9 +1,9 @@
 import React from 'react'
 
-import { Navbar } from '../components/Nav/Navbar.js';
-import { ItemList} from '../components/ItemList/ItemList.js';
+import { Navbar } from '../../components/Nav/Navbar.js';
+import Itemmeli from '../../components/Api/itemmeli';
 
-
+import ItemDetailContainer from './../ItemDetail/ItemDetailContainer';
 
 export const HomeContainer = () => {
     
@@ -18,7 +18,8 @@ export const HomeContainer = () => {
                 
                             <div className="col col-md-12"><Navbar></Navbar></div>
                             <div className="container">
-                            <ItemList></ItemList>
+                            <Itemmeli></Itemmeli>
+                            <ItemDetailContainer></ItemDetailContainer>                            
                             </div>
 
                 
