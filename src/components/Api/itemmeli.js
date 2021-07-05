@@ -13,7 +13,7 @@ function Itemmeli() {
                     title:element.title,
                     img: element.thumbnail,
                     price: element.price,
-                    stock:100,
+                    stock:element.available_quantity,
                 }
             })
             setProductos(aux);

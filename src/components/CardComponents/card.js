@@ -2,7 +2,7 @@ import React from 'react'
 import './estilosCard.css'
 
 import Counter from '../Counter/Counter';
-
+import { Link } from 'react-router-dom';
 
 const CardComponent = ({title,price,img,stock}) => {
     
@@ -21,7 +21,7 @@ const CardComponent = ({title,price,img,stock}) => {
                     <strong>"Precio" {price} </strong>
                     <strong>"Stock:" {stock}</strong>
                 </div>
-            
+                <button><Link to={'/detalle'}>Ver detalle</Link></button>
                 <Counter  stock={stock}></Counter>
             </div>
             
